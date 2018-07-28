@@ -20,4 +20,6 @@ function fuzzyMatch(collection, string) {
       newCollection.push(collection[i]);
     }
   }
+  
+  return newCollection;
 }
