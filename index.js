@@ -4,7 +4,7 @@ function findMatching(collection, string){
 
   for (var i = 0; i < collection.length; i++) {
     if (collection[i] === string) {
-      newCollection.push(colleciton[i]);
+      newCollection.push(collection[i]);
     }
   }
 
