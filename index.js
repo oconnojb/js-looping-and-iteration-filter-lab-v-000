@@ -23,3 +23,15 @@ function fuzzyMatch(collection, string) {
   
   return newCollection;
 }
+
+function matchName(collection, n) {
+  const newCollection = [];
+
+  for (var i = 0; i < collection.length; i++) {
+    if (collection[i]['name'] === n) {
+      newCollection.push(collection[i]);
+    }
+  }
+
+  return newCollection;
+}
