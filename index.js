@@ -2,11 +2,9 @@
 function findMatching(collection, string){
   const newCollection = [];
 
-  for (const item of collection) {
-    for (var i = 0; i < collection.length; i++) {
-      if (item[i] === string) {
-        newCollection.push(item[i])
-      }
+  for (var i = 0; i < collection.length; i++) {
+    if (collection[i] === string) {
+      newCollection.push(colleciton[i]);
     }
   }
 
