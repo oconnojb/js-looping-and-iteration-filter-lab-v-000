@@ -3,7 +3,7 @@ function findMatching(collection, string){
   const newCollection = [];
 
   for (var i = 0; i < collection.length; i++) {
-    if (collection[i] === string) {
+    if (collection[i].toUpperCase() === string.toUpperCase()) {
       newCollection.push(collection[i]);
     }
   }
