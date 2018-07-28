@@ -10,3 +10,14 @@ function findMatching(collection, string){
 
   return newCollection;
 }
+
+function fuzzyMatch(collection, string) {
+  const len = string.length;
+  const newCollection = [];
+
+  for (var i = 0; i < collection.length; i++) {
+    if (collection[i].slice(0, len) === string) {
+      newCollection.push(collection[i]);
+    }
+  }
+}
